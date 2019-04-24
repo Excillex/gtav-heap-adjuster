@@ -17,7 +17,7 @@ void InitializeMod()
 	DWORD oldProtect;
 	VirtualProtect(loc, 4, PAGE_EXECUTE_READWRITE, &oldProtect);
 
-	*loc = 650 * 1024 * 1024; // 600 MiB, default in 323 was 412 MiB
+	*loc = 980 * 1024 * 1024; // 600 MiB, default in 323 was 412 MiB
 
 	VirtualProtect(loc, 4, oldProtect, &oldProtect);
 }
